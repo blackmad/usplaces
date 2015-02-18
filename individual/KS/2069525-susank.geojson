@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "STATEFP": "20", "PLACEFP": "69525", "PLACENS": "02396010", "GEOID": "2069525", "NAME": "Susank", "NAMELSAD": "Susank city", "LSAD": "25", "CLASSFP": "C1", "PCICBSA": "N", "PCINECTA": "N", "MTFCC": "G4110", "FUNCSTAT": "A", "ALAND": 245761.0, "AWATER": 0.0, "INTPTLAT": "+38.6405689", "INTPTLON": "-098.7745237" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -98.77686, 38.639412 ], [ -98.776859, 38.63966 ], [ -98.776766, 38.643331 ], [ -98.775299, 38.643329 ], [ -98.772163, 38.64331 ], [ -98.772208, 38.64084 ], [ -98.772225, 38.639791 ], [ -98.772257, 38.637816 ], [ -98.775313, 38.637826 ], [ -98.7769, 38.637827 ], [ -98.77686, 38.639412 ] ] ] } }
+]
+}

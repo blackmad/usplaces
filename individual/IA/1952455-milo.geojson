@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "STATEFP": "19", "PLACEFP": "52455", "PLACENS": "02395333", "GEOID": "1952455", "NAME": "Milo", "NAMELSAD": "Milo city", "LSAD": "25", "CLASSFP": "C1", "PCICBSA": "N", "PCINECTA": "N", "MTFCC": "G4110", "FUNCSTAT": "A", "ALAND": 1612646.0, "AWATER": 0.0, "INTPTLAT": "+41.2887201", "INTPTLON": "-093.4393691" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -93.4474, 41.29482 ], [ -93.442669, 41.294836 ], [ -93.432447, 41.294776 ], [ -93.432314, 41.291335 ], [ -93.43246, 41.282468 ], [ -93.442603, 41.282207 ], [ -93.443255, 41.282308 ], [ -93.44586, 41.282374 ], [ -93.4458, 41.291246 ], [ -93.447382, 41.291234 ], [ -93.4474, 41.29482 ] ] ] } }
+]
+}

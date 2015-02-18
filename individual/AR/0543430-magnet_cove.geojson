@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "STATEFP": "05", "PLACEFP": "43430", "PLACENS": "02406078", "GEOID": "0543430", "NAME": "Magnet Cove", "NAMELSAD": "Magnet Cove town", "LSAD": "43", "CLASSFP": "C1", "PCICBSA": "N", "PCINECTA": "N", "MTFCC": "G4110", "FUNCSTAT": "A", "ALAND": 25346.0, "AWATER": 0.0, "INTPTLAT": "+34.4383252", "INTPTLON": "-092.8374879" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -92.838196, 34.439231 ], [ -92.836808, 34.439231 ], [ -92.836805, 34.437402 ], [ -92.837877, 34.437413 ], [ -92.838146, 34.437416 ], [ -92.838196, 34.439231 ] ] ] } }
+]
+}

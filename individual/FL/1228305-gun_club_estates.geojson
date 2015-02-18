@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "STATEFP": "12", "PLACEFP": "28305", "PLACENS": "02402558", "GEOID": "1228305", "NAME": "Gun Club Estates", "NAMELSAD": "Gun Club Estates CDP", "LSAD": "57", "CLASSFP": "U1", "PCICBSA": "N", "PCINECTA": "N", "MTFCC": "G4210", "FUNCSTAT": "S", "ALAND": 326926.0, "AWATER": 0.0, "INTPTLAT": "+26.6753331", "INTPTLON": "-080.1080616" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -80.112197, 26.675956 ], [ -80.112164, 26.676891 ], [ -80.112153, 26.677235 ], [ -80.103833, 26.67699 ], [ -80.103955, 26.673449 ], [ -80.104521, 26.673462 ], [ -80.106135, 26.673504 ], [ -80.107153, 26.67353 ], [ -80.10922, 26.673582 ], [ -80.109786, 26.673596 ], [ -80.112279, 26.673657 ], [ -80.112197, 26.675956 ] ] ] } }
+]
+}

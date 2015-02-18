@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "STATEFP": "39", "PLACEFP": "12560", "PLACENS": "02397575", "GEOID": "3912560", "NAME": "Catawba", "NAMELSAD": "Catawba village", "LSAD": "47", "CLASSFP": "C1", "PCICBSA": "N", "PCINECTA": "N", "MTFCC": "G4110", "FUNCSTAT": "A", "ALAND": 549904.0, "AWATER": 0.0, "INTPTLAT": "+39.9995468", "INTPTLON": "-083.6228324" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -83.62719, 40.001231 ], [ -83.624427, 40.003863 ], [ -83.617932, 40.002301 ], [ -83.618406, 40.000535 ], [ -83.618789, 39.999393 ], [ -83.619496, 39.996997 ], [ -83.623116, 39.994865 ], [ -83.626077, 39.995843 ], [ -83.626714, 39.998434 ], [ -83.626958, 40.000145 ], [ -83.62719, 40.001231 ] ] ] } }
+]
+}
