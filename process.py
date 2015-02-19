@@ -43,10 +43,13 @@ def processFeatures(input):
 
       from kartograph import Kartograph
 
+      attributes = f['properties'].keys()
+
       cfg = {
         "layers": {
             "mylayer": {
-                "labeling": f['properties'],
+                "labeling": { "key": "NAME" },
+                "attributes": attributes,
                 "src": shapefile
             }
         },
