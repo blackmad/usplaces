@@ -12,13 +12,20 @@ input_files = [ join('srcdata', f) for f in listdir('srcdata') if isfile(join('s
 data_dir = 'individual'
 svg_dir = 'svg'
 
+import unicodedata
+ 
+def deaccent(some_unicode_string):
+    return u''.join(c for c in unicodedata.normalize('NFD', some_unicode_string)
+               if unicodedata.category(c) != 'Mn')
+
 def processFile(f):
   processFeatures(fiona.open(f))
 
 def processFeatures(input):
   for f in input:
-    filename = f['properties']['GEOID'] + '-' + f['properties']['NAME'].lower().replace(' ', '_').replace('/', '_') + '.geojson'
-    directory = 'data/' + us.states.lookup(f['properties']['STATEFP']).abbr
+    basefilename = f['properties']['GEOID'] + '-' + deaccent(f['properties']['NAME'].lower().replace(' ', '_').replace('/', '_'))
+    filename = basefilename + '.geojson'
+    directory = data_dir + '/' + us.states.lookup(f['properties']['STATEFP']).abbr + '/' + f['properties']['NAME'][0]
     if not os.path.exists(directory):
       os.makedirs(directory)
     print 'writing %s' % filename
@@ -27,15 +34,20 @@ def processFeatures(input):
     output.close()
     print 'wrote %s' % filename
 
-    if False:
+    if True:
+      shapefile = '%s/%s.shp' % (directory, filename)
+      print shapefile
+      output = fiona.open(shapefile,  'w', schema = input.schema, driver='ESRI Shapefile')
+      output.write(f)
+      output.close()
+
       from kartograph import Kartograph
-      output = fiona.open('/tmp/t.shp', 'w', schema = input.schema, driver = 'ESRI Shapefile')
 
       cfg = {
         "layers": {
             "mylayer": {
                 "labeling": f['properties'],
-                "src": "/tmp/t.shp",
+                "src": shapefile
             }
         },
         "export": {
@@ -51,8 +63,7 @@ def processFeatures(input):
       directory = 'svg/' + directory
       if not os.path.exists(directory):
         os.makedirs(directory)
-      output = fiona.open('%s/%s' % (directory, filename), 'w', schema = input.schema, driver='GeoJSON')
-      K.generate(cfg, outfile='mymap.svg')
+      K.generate(cfg, outfile=os.path.join(directory, filename))
 
 for f in input_files:
   processFile(f)
